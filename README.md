@@ -1,6 +1,8 @@
 # Leetcode
 This repository contains my leetcode solutions.
+
 🚀 LeetCode Solutions Repository 🚀
+
 Welcome to my LeetCode solutions repository! This repository contains my solutions to various LeetCode problems mostly in Java or Python.
 ### What's Inside?
 - **Java Solutions**: Java is a popular language for coding interviews. You'll find well-documented Java solutions to LeetCode problems, along with the explanation.
