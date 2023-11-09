@@ -7,7 +7,7 @@ class Solution {
             max = Math.max(max, num);
             min = Math.min(min, num);
         }
-
+ 
         // Step 2: Calculate the range of values in the array.
         int n = max - min;
 
