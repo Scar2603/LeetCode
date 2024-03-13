@@ -1,4 +1,4 @@
-# Find Pivot Integer
+# 2485. Find the Pivot Integer
 
 ## Problem Statement
 Given a positive integer n, find the pivot integer x such that:
