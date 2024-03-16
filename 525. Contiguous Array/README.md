@@ -23,7 +23,17 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
 - nums[i] is either 0 or 1.
 
 ## Approach
-We can solve this problem using a HashMap to keep track of the running sum of 0s and 1s encountered so far and their indices. We initialize the map with (0, -1) to handle the case when the subarray with equal number of 0s and 1s starts from the beginning. We iterate through the array, and for each 0 encountered, we decrement the count by 1, and for each 1 encountered, we increment the count by 1. If the count is already present in the map, it means that the subarray from the index in the map to the current index has equal number of 0s and 1s. We update the length accordingly. If the count is not present in the map, we add it along with the current index to the map. Finally, we return the maximum length found.
+1. Initialize a HashMap to store the running sum of 0s and 1s encountered so far and their indices.
+2. Initialize variables `length` to store the maximum length found and `count` to keep track of the running sum.
+3. Put an initial entry (0, -1) into the map to handle the case when the subarray with equal number of 0s and 1s starts from the beginning.
+4. Iterate through the array.
+5. For each 0 encountered, decrement the count by 1.
+6. For each 1 encountered, increment the count by 1.
+7. Check if the count is present in the map.
+   - If present, update the length by taking the maximum of the current length and the difference between the current index and the index stored in the map.
+   - If not present, add the count along with the current index to the map.
+8. Finally, return the maximum length found.
+
 
 ## Time Complexity
 The time complexity of this approach is O(n), where n is the length of the input array nums.
