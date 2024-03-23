@@ -4,7 +4,7 @@
 
 Given an array nums, return the running sum of nums, where runningSum[i] is defined as the sum of all elements nums[0] through nums[i].
 
-## Example
+## Examples
 ### Example 1
 ```plaintext
 Input: nums = [1,2,3,4]
