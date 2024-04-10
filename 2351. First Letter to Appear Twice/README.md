@@ -1,4 +1,4 @@
-# First Repeated Character in a String
+# 2351. First Letter to Appear Twice
 
 ## Problem Statement
 Given a string s consisting of lowercase English letters, return the first letter to appear twice.
