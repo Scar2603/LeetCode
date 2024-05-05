@@ -23,17 +23,18 @@ Output: [4,5,9]
 Explanation: You are given the third node with value 1, and the linked list should become 4 -> 5 -> 9 after deleting the node.
 ```
 
+## Intuition
+To delete a node from a linked list when you have access only to the node itself (and not the head of the list):
+- Copy the value of the next node (`node.next`) to the current node (`node`).
+- Update the `node.next` pointer to skip over the next node (`node.next.next`).
 
 ## Approach
-To delete a node from a singly-linked list without access to the head node:
-1. Copy the value of the next node (`node.next`) to the current node (`node`).
-2. Update the `node.next` pointer to skip over the next node (`node.next.next`).
-3. Set the next node's `next` pointer to `null` to remove it from the list.
+1. Copy the value of `node.next` to `node` (`node.val = node.next.val`).
+2. Update `node.next` to skip over the next node (`node.next = node.next.next`).
 
 ## Steps
 1. Copy the value of `node.next` to `node` (`node.val = node.next.val`).
 2. Update `node.next` to skip over the next node (`node.next = node.next.next`).
-3. Set `node.next.next` to `null` to remove the next node from the list.
 
 ## Time Complexity
 The time complexity of this approach is O(1) because we are performing a constant number of operations.
