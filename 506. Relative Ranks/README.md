@@ -12,14 +12,20 @@ Return an array `answer` of size `n` where `answer[i]` is the rank of the ith at
 
 ## Examples
 ### Example 1:
+```plaintext
 Input: score = [5,4,3,2,1]  
 Output: ["Gold Medal","Silver Medal","Bronze Medal","4","5"]  
 Explanation: The placements are [1st, 2nd, 3rd, 4th, 5th].
+```
+
 
 ### Example 2:
+```plaintext
 Input: score = [10,3,8,9,4]  
 Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]  
 Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
+
+```
 
 ## Intuition
 To solve this problem, we can follow these steps:
